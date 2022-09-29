@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부동산113 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        #wrapper > header {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        #wrapper > header > div {
+            width: 1000px;
+            height: 78px;
+            border: 1px solid green;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #wrapper > main {
+            overflow: hidden;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        }
+        #wrapper > main > div {
+            border: 1px solid green;
+        }
+        #wrapper > main > .banner {
+            float: left;
+            width: 670px;
+            height: 320px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .cell {
+            float: right;
+            width: 326px;
+            height: 133px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .qna {
+            float: right;
+            width: 326px;
+            height: 182px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > section {
+            
+        }
+        #wrapper > main > section > aside {
+            float: left;
+            border: 1px solid green;
+            width: 195px;
+            height: 760px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > section > article {
+            float: right;
+            width: 800px;
+            height: 250px;
+            border: 1px solid green;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        #wrapper > footer {
+            width: 1000px;
+            height: 130px;
+            border: 1px solid blue;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div></div>
+        </header>
+        <main>
+            <div class="banner"></div>
+            <div class="cell"></div>
+            <div class="qna"></div>
+            <section>
+                <aside></aside>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

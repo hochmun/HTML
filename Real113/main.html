@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부동산113</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+        ul, ol {list-style: none;}
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        #wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        #wrapper > header {
+            width: 100%;
+            height: auto;
+            background: url(./img/header_bg.gif);
+            box-sizing: border-box;
+        }
+        #wrapper > header > div {
+            width: 1000px;
+            height: 78px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #wrapper > header > div > a {}
+        #wrapper > header > div .logo {
+            margin-top: 6px;
+        }
+        #wrapper > header > div > ul {
+            float: right;
+            width: 620px;
+            height: 32px;
+            margin-top: 14px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #wrapper > header > div > ul > li {
+            float: left;
+            width: 124px;
+            height: 32px;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        #wrapper > header > div li > a {
+            font-size: 17px;
+            line-height: 32px;
+            font-weight: bolder;
+        }
+        #wrapper > header .latest {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            width: 500px;
+            height: 30px;
+        }
+        #wrapper > header .latest > a:nth-child(1) {
+            position: relative;
+            top: 4px;
+        }
+        #wrapper > header .latest > a {
+            display: inline-block;
+            color: #555;
+        }
+        #wrapper > header .latest > a:nth-child(2) {
+            position: relative;
+            top: -4px;
+            left: 6px;
+        }
+
+
+        #wrapper > main {
+            overflow: hidden;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        }
+        #wrapper > main > div {
+            border: 1px solid #d7d7d7;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .banner {
+            overflow: hidden;
+            float: left;
+            width: 670px;
+            height: 320px;
+            background: url(./img/main_banner_bg.jpg) no-repeat;
+        }
+        #wrapper > main > .banner > img {
+            margin-top: 100px;
+            margin-left: 160px;
+        }
+        #wrapper > main > .banner ul {
+            float: right;
+            width: 80px;
+            height: 100%;
+            border-left: 1px solid #d7d7d7;
+            
+        }
+        #wrapper > main > .banner ul img {
+            display: block;
+            width: 80px;
+            border-right: 1px solid #d7d7d7;
+        }
+        #wrapper > main > .banner ul li {
+            width: 100%;
+            height: 41px;
+            border-top: 1px solid #d7d7d7;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .banner ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 40px;
+            background: #f2f2f2;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        #wrapper > main > .cell {
+            position: relative;
+            float: right;
+            width: 326px;
+            height: 133px;
+            background-color: #f2f2f2;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .cell > img {
+            position: absolute;
+        }
+        #wrapper > main > .cell > img:nth-child(1) {
+            top: 20px;
+            left: 20px;
+        }
+        #wrapper > main > .cell > img:nth-child(2) {
+            top: 45px;
+            left: 20px;
+            z-index: 10;
+        }
+        #wrapper > main > .cell > img:nth-child(3) {
+            bottom: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+        #wrapper > main > .cell > img:nth-child(4) {
+            right: 0px;
+            z-index: 0;
+        }
+
+        #wrapper > main > .qna {
+            float: right;
+            width: 326px;
+            height: 182px;
+            margin-top: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > .qna > h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #wrapper > main > .qna > table {
+            width: 100%;
+            height: auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+            
+        }
+        #wrapper > main > .qna > table tr {
+            
+        }
+        #wrapper > main > .qna > table td {
+            
+        }
+        #wrapper > main > .qna > table tr > td:nth-of-type(2) {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 218px;
+            line-height: 20px;
+        }
+        #wrapper > main > .qna > table img {}
+
+        #wrapper > main > section {
+            
+        }
+        #wrapper > main > section > aside {
+            float: left;
+            border: 1px solid green;
+            width: 195px;
+            height: 760px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        #wrapper > main > section > article {
+            float: right;
+            width: 800px;
+            height: 250px;
+            border: 1px solid green;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        #wrapper > footer {
+            width: 1000px;
+            height: 130px;
+            border: 1px solid blue;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="#">
+                    <img src="./img/header_logo.jpg" alt="로고" class="logo">
+                </a>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">매물정보</a></li>
+                    <li><a href="#">매도의뢰</a></li>
+                    <li><a href="#">매입의뢰</a></li>
+                    <li><a href="#">질문답변</a></li>
+                </ul>
+                <div class="latest">
+                    <a href="#">
+                        <img src="./img/header_txt_latest.gif" alt="최신매물정보">
+                    </a>
+                    <a href="#">
+                        [아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="banner">
+                <img src="./img/main_banner_txt.png" alt="전국 매물 보유량 최다! 계약 만독도 최상!">
+                <ul>
+                    <img src="./img/main_banner_local.jpg" alt="지역선택">
+                    <li><a href="#">서울시</a></li>
+                    <li><a href="#">경기도</a></li>
+                    <li><a href="#">대전시</a></li>
+                    <li><a href="#">대구시</a></li>
+                    <li><a href="#">부산시</a></li>
+                    <li><a href="#">광주시</a></li>
+                </ul>
+            </div>
+            <div class="cell">
+                <img src="./img/main_call_tit.png" alt="상담문의 전화">
+                <img src="./img/main_call_txt.png" alt="궁금하신 사항은 언제든지 전화주세요">
+                <img src="./img/main_call_num.png" alt="02-123-4567">
+                <img src="./img/main_call_phone.png" alt="전화">
+            </div>
+            <div class="qna">
+                <h3>질문과 답변</h3>
+                <table>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">테스트입니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/ico_latest.gif" alt=">"></td>
+                        <td><a href="#">[문의] 분양상품 중 문의 드립니다. 빠른 답변 부탁드립니다.</a></td>
+                        <td>20-05-13</td>
+                    </tr>
+                </table>
+            </div>
+            <section>
+                <aside></aside>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
