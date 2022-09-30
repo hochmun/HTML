@@ -28,7 +28,7 @@
         }
         #wrapper > header > div {
             width: 1000px;
-            height: 78px;
+            height: 80px;
             margin: 0 auto;
             box-sizing: border-box;
             position: relative;
@@ -57,6 +57,9 @@
             line-height: 32px;
             font-weight: bolder;
         }
+        #wrapper > header > div li > a:hover {
+            color: #7b231f;
+        }
         #wrapper > header .latest {
             position: absolute;
             left: 0;
@@ -77,6 +80,9 @@
             position: relative;
             top: -4px;
             left: 6px;
+        }
+        #wrapper > header .latest > a:nth-child(2):hover {
+            text-decoration: underline;
         }
 
 
@@ -187,7 +193,7 @@
             
         }
         #wrapper > main > .qna > table td {
-            
+            color: #6a6a6a;
         }
         #wrapper > main > .qna > table tr > td:nth-of-type(2) {
             display: inline-block;
@@ -197,19 +203,85 @@
             width: 218px;
             line-height: 20px;
         }
+        #wrapper > main > .qna > table tr > td:nth-of-type(2):hover {
+            text-decoration: underline;
+        }
         #wrapper > main > .qna > table img {}
+        #wrapper > main > .qna > table a {}
 
         #wrapper > main > section {
             
         }
         #wrapper > main > section > aside {
             float: left;
-            border: 1px solid green;
+            border: 1px solid #d7d7d7;
             width: 195px;
             height: 760px;
             margin-top: 5px;
             box-sizing: border-box;
         }
+        #wrapper > main aside > .notice {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #wrapper > main aside > .notice > h3 {
+            font-weight: bold;
+            font-size: 14px;
+            padding-bottom: 6px;
+        }
+        #wrapper > main aside > .notice > ul {}
+        #wrapper > main aside > .notice li {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 20px;
+        }
+        #wrapper > main aside > .notice li > a {}
+
+        #wrapper > main aside > .quick {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #wrapper > main aside > .quick > h3 {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #wrapper > main aside > .quick > a {
+            display: block;
+            width: 100%;
+            height: 34px;
+            border: 1px solid #d9d9d9;
+            margin-top: 6px;
+            font-size: 0px;
+            background-color: #f6f6f6;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+        #wrapper > main aside > .quick > a:nth-child(2) {
+            background-image: url(./img/aside_quick_court.png);
+        }
+        #wrapper > main aside > .quick > a:nth-child(3) {
+            background-image: url(./img/aside_quick_google.png);
+        }
+        #wrapper > main aside > .quick > a:nth-child(4) {
+            background-image: url(./img/aside_quick_naver_map.png);
+        }
+        #wrapper > main aside > .quick > a:nth-child(5) {
+            background-image: url(./img/aside_quick_naver_subway.png);
+        }
+
+        #wrapper > main aside > .sell {}
+        #wrapper > main aside > .sell > img {}
+        #wrapper > main aside > .sell > img:nth-child(1) {}
+        #wrapper > main aside > .sell > img:nth-child(2) {}
+        
+        #wrapper > main aside > .buy {}
+        #wrapper > main aside > .banner {}
+
         #wrapper > main > section > article {
             float: right;
             width: 800px;
@@ -248,7 +320,7 @@
                         <img src="./img/header_txt_latest.gif" alt="최신매물정보">
                     </a>
                     <a href="#">
-                        [아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100
+                        <img src="./img/ico_latest.gif" alt=">">[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100
                     </a>
                 </div>
             </div>
@@ -308,7 +380,58 @@
                 </table>
             </div>
             <section>
-                <aside></aside>
+                <aside>
+                    <article class="notice">
+                        <h3>공지사항</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/ico_latest.gif" alt=">">전국 매물 보유량 최다! 계약 만족도 최상!.</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="quick">
+                        <h3>바로가기</h3>
+                        <a href="#">대법원 인터넷 등기소</a>
+                        <a href="#">구글 지도</a>
+                        <a href="#">네이버 지도</a>
+                        <a href="#">지하철 노선도</a>
+                    </article>
+                    <a href="#" class="sell">
+                        <img src="./img/aside_sell_txt.png" alt="매도의뢰">
+                        <img src="./img/aside_sell_house.jpg" alt="매물을 내놓습니다.">
+                    </a>
+                    <a href="#" class="buy">
+                        <img src="./img/aside_buy_txt.png" alt="매입의뢰">
+                        <img src="./img/aside_buy_house.jpg" alt="매물을 구합니다.">
+                    </a>
+                    <div class="banner">
+                        <img src="./img/aside_banner_txt.png" alt="감각적 내추럴 가구">
+                        <a href="#">
+                            <img src="./img/aside_banner_go.png" alt="바로가기 go">
+                        </a>
+                    </div>
+                </aside>
                 <article></article>
                 <article></article>
                 <article></article>
