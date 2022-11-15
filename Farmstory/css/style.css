@@ -219,28 +219,44 @@ main > .info > div > .tel > .time {line-height: 18px; color: #666;}
 main > .info > div > .btns {margin-top: 16px;}
 main > .info > div > .account {line-height: 18px; color: #666;}
 
+/* tabs */
 #tabs > ul {
-    border: 1px solid blue;
+    margin-top: 10px;
     overflow: hidden;
 }
 #tabs > ul > li {
-    border: 1px solid green;
+    border: 1px solid #d7d7d7;
+    border-bottom: none;
     float: left;
     margin: 1px 0.2em 0 0;
 }
 #tabs > ul > li > a {
     float: left;
     padding: 6px 12px;
+    background-color: #fff;
 }
+#tabs > ul > li:nth-child(1) > a {
+    background-color: #d7d7d7;
+}
+
 #tabs > div {
-    border: 1px solid blue;
+    border: 1px solid #d7d7d7;
 }
+
+#tabs > ul > li > a:hover {
+    background-color: #d7d7d7;
+}
+
 #tabs > div > ul {}
 #tabs > div > ul > li {
-    border: 1px solid green;
-    line-height: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
 }
-#tabs > div > ul > li > a {}
+#tabs > div > ul > li > a {
+    border-bottom: 1px solid #c2c2c2;
+}
 
 /* 푸터 */
 footer {
