@@ -220,9 +220,11 @@ main > .info > div > .btns {margin-top: 16px;}
 main > .info > div > .account {line-height: 18px; color: #666;}
 
 #tabs > ul {
-    
+    border: 1px solid blue;
+    overflow: hidden;
 }
 #tabs > ul > li {
+    border: 1px solid green;
     float: left;
     margin: 1px 0.2em 0 0;
 }
@@ -230,9 +232,14 @@ main > .info > div > .account {line-height: 18px; color: #666;}
     float: left;
     padding: 6px 12px;
 }
-#tabs > div {}
+#tabs > div {
+    border: 1px solid blue;
+}
 #tabs > div > ul {}
-#tabs > div > ul > li {}
+#tabs > div > ul > li {
+    border: 1px solid green;
+    line-height: 18px;
+}
 #tabs > div > ul > li > a {}
 
 /* 푸터 */
