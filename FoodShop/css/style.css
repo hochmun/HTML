@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px 'noto sans korean';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+header > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+header > div:nth-child(1) {height: 36px; border: 1px solid #dcdcdc;}
+header > div:nth-child(2) {height: 100px;}
+header > div:nth-child(3) {height: 54px; background-color: #40382e;}
+
+header > div > * {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header .top {}
+header .top > p {
+    float: right;
+    margin-top: 10px;
+}
+
+header > div > article {position: relative;}
+header > div > article > .shopping {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+header > div > article > .shopping > span:nth-of-type(1) {
+    color: #ff6a00;
+    font-size: 15px;
+}
+
+header > div > article > .logo {
+    position: absolute;
+    left: 34.5%;
+    top: 20px;
+}
+header > div > article > .oneday_txt {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+header > div > nav > ul {width: 100%; height: 100%;}
+header > div > nav > ul > li {float: left; width: 11.11%; height: 100%;}
+header > div > nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 54px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+header > div > nav > ul > li > a:hover {
+    color: #ff6a00;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main > section {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main > section:nth-child(1) {height: 352px; background-color: #ffeed4;}
+main > section:nth-child(2) {height: 520px;}
+main > section:nth-child(3) {height: 190px;}
+main > section:nth-child(4) {height: 660px;}
+main > section:nth-child(5) {height: 200px;}
+main > section:nth-child(6) {height: 660px;}
+
+main > section > article {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* slider */
+main > .slider ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+main > .slider ul > li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* go */
+main > .go > article {
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+main > .go div {
+    float: left;
+    box-sizing: border-box;
+}
+
+main > .go div:nth-child(1) {width: 412px; height: 450px;}
+main > .go div:nth-child(2) {width: 322px; height: 220px; margin-left: 11px;}
+main > .go div:nth-child(3) {width: 322px; height: 220px; margin-left: 13px;}
+main > .go div:nth-child(4) {width: 322px; height: 220px; margin-left: 11px; margin-top: 10px;}
+main > .go div:nth-child(5) {width: 322px; height: 220px; margin-left: 13px; margin-top: 10px;}
+/* oneday */
+main > .oneday {
+    background-image: url(../img//oneday_bg.png);
+    background-size: cover;
+    background-position: 50% center;
+}
+main > .oneday img {margin-top: 50px;}
+
+/* vegetable */
+main > .vegetable ul {
+    width: 100%;
+    height: 312px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main > .vegetable ul > li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main .vegetable > article {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+main .vegetable > article > img {}
+
+main .vegetable .thumb_rolling {
+    width: 100%;
+    margin-top: 36px;
+    overflow: hidden;
+}
+main .vegetable .thumb_rolling > li {padding: 10px;}
+main .vegetable .thumb_rolling > li > a {}
+main .vegetable .thumb_rolling > li > a > img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+main .vegetable .thumb_rolling > li > a > h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #41392f;
+}
+main .vegetable .thumb_rolling > li > a > p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+    color: #959595;
+}
+main .vegetable .thumb_rolling > li > a > h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+main .all {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #efefef;
+    box-shadow: 0px 2px 2px #999;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 56px auto 0;
+    color: #626262;
+}
+main .all:hover {border-color: #999;}
+
+/* premium */
+main .premium {
+    background-image: url(../img/premium_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+main .premium > article {text-align: center;}
+main .premium > article > a > img {margin-top: 52px;}
+
+/* seafood */
+main > .seafood ul {
+    width: 100%;
+    height: 312px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+main > .seafood ul > li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main .seafood > article {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+main .seafood > article > img {}
+
+main .seafood .thumb_rolling {
+    width: 100%;
+    margin-top: 36px;
+    overflow: hidden;
+}
+main .seafood .thumb_rolling > li {padding: 10px;}
+main .seafood .thumb_rolling > li > a {}
+main .seafood .thumb_rolling > li > a > img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+main .seafood .thumb_rolling > li > a > h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #41392f;
+}
+main .seafood .thumb_rolling > li > a > p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+    color: #959595;
+}
+main .seafood .thumb_rolling > li > a > h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+footer > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer > div:nth-child(1) {height: 50px; background-color: #626262;}
+footer > div:nth-child(2) {height: 156px; background-color: #434343;}
+
+footer > div > div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+footer .terms {
+    float: left;
+    color: #eeeeee;
+    font-size: 15px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+footer .terms > a {
+    color: #eeeeee;
+    font-size: 15px;
+    font-weight: bold;
+}
+footer .terms > a:nth-child(1) {color: #ff6a00;}
+
+footer .info {
+    float: left;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #aca9a9;
+}
+
+footer > div > div > img {
+    float: right;
+    margin-top: 16px;
+}
